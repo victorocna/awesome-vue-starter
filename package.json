@@ -1,0 +1,47 @@
+{
+  "name": "awesome-vue-starter",
+  "version": "0.1.0",
+  "description": "The awesome Vue and Nuxt.js starter project from Chess Coders",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vue",
+    "nuxt",
+    "tailwindcss",
+    "starter"
+  ],
+  "author": "victorocna <victor@chesscoders.com> (https://chesscoders.com)",
+  "license": "MIT",
+  "engines": {
+    "npm": ">= 10",
+    "node": ">= 20"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.19",
+    "core-js": "^3.25.3",
+    "date-fns": "^3.6.0",
+    "lodash": "^4.17.21",
+    "nuxt": "^2.15.8",
+    "tailwindcss": "^3.4.3",
+    "vue": "^2.7.10",
+    "vue-server-renderer": "^2.7.10",
+    "vue-template-compiler": "^2.7.10"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.19.1",
+    "@nuxtjs/eslint-config": "^11.0.0",
+    "@nuxtjs/eslint-module": "^3.1.0",
+    "@nuxtjs/tailwindcss": "^5.3.3",
+    "eslint": "^8.24.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-nuxt": "^4.0.0",
+    "eslint-plugin-vue": "^9.5.1",
+    "postcss": "^8.4.38",
+    "prettier": "^2.7.1"
+  }
+}

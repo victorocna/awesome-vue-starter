@@ -1,0 +1,23 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "es2020": true,
+    "node": true
+  },
+  "parserOptions": {
+    "parser": "@babel/eslint-parser",
+    "requireConfigFile": false
+  },
+  "extends": [
+    "@nuxtjs",
+    "plugin:nuxt/recommended",
+    "prettier"
+  ],
+  "plugins": [],
+  "rules": {
+    "no-console": ["error", { "allow": ["warn", "error"] }],
+    "no-unused-vars": ["error", { "ignoreRestSiblings": true }],
+    "no-warning-comments": "warn"
+  }
+}
