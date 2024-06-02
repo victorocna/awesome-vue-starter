@@ -1,9 +1,12 @@
+import config from './site.config';
+
 export default {
   dir: {
     static: 'public',
   },
   head: {
-    title: 'awesome-vue-starter',
+    title: config.title,
+    description: config.description,
     htmlAttrs: {
       lang: 'en',
     },
@@ -16,7 +19,23 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'icon', type: 'image/png', href: '/favicon.png' },
+      ...config.stylesheets.map((href) => ({ rel: 'stylesheet', href })),
     ],
   },
-  components: true,
+  components: ['~/components', '~/components/Fields', '~/components/Forms'],
+  css: [
+    '~/css/index.css',
+    '~/css/buttons.css',
+    '~/css/forms.css',
+    '~/css/layout.css',
+    '~/css/loading.css',
+  ],
+  build: {
+    postcss: {
+      plugins: {
+        tailwindcss: {},
+        autoprefixer: {},
+      },
+    },
+  },
 };

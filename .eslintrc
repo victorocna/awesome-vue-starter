@@ -18,6 +18,9 @@
   "rules": {
     "no-console": ["error", { "allow": ["warn", "error"] }],
     "no-unused-vars": ["error", { "ignoreRestSiblings": true }],
-    "no-warning-comments": "warn"
+    "no-warning-comments": "warn",
+    "vue/multi-word-component-names": "off",
+    "vue/no-reserved-component-names": "off",
+    "vue/require-prop-types": "off"
   }
 }
