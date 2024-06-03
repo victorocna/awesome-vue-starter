@@ -5,7 +5,7 @@
 
 # User specific
 NOTES.txt
-yarn.lock
+package-lock.json
 .DS_Store
 
 # Logs

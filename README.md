@@ -11,7 +11,7 @@ Make sure to read our [extensive documentation](https://github.com/victorocna/aw
 Install dependencies
 
 ```bash
-npm ci
+yarn
 ```
 
 Copy the example environment variables and update them if needed
@@ -23,5 +23,5 @@ cp .env.example .env
 Start the local server
 
 ```bash
-npm run dev
+yarn dev
 ```

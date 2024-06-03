@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   sitename: 'Your Awesome App',
   title: 'Your Awesome App',
   description: `
