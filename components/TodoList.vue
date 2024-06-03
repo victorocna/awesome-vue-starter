@@ -8,7 +8,7 @@
     </template>
     <template v-if="isSuccess">
       <ul class="bg-green-100 border border-green-400 px-4 py-3 rounded relative grid">
-        <li v-for="item in data" :key="item.id">{{ item.id }}</li>
+        <li v-for="item in data" :key="item.id">{{ item.title }}</li>
       </ul>
     </template>
   </div>
@@ -19,7 +19,8 @@ import { useQuery } from '~/hooks';
 
 export default {
   setup() {
-    return useQuery('/posts');
+    const { data, error, isLoading, isError, isSuccess } = useQuery('/posts');
+    return { data, error, isLoading, isError, isSuccess };
   },
 };
 </script>

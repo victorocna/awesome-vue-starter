@@ -1,28 +1,23 @@
 import qs from 'query-string';
-import { ref, watchEffect, computed } from 'vue';
+import { ref, computed } from 'vue';
 import { axios } from '../lib';
 
-const useQuery = (url, options) => {
+const useQuery = async (url, options) => {
   const fullUrl = qs.stringifyUrl({ url, query: options });
+
+  // Reactive variables
   const data = ref(null);
   const error = ref(null);
   const status = ref('loading');
 
-  const queryFn = async () => {
-    status.value = 'loading';
-    try {
-      const res = await axios.get(fullUrl);
-      data.value = res.data;
-      status.value = 'success';
-    } catch (err) {
-      error.value = err;
-      status.value = 'error';
-    }
-  };
-
-  watchEffect(() => {
-    queryFn();
-  });
+  // Fetch data
+  try {
+    data.value = await axios.get(fullUrl);
+    status.value = 'success';
+  } catch (err) {
+    error.value = err;
+    status.value = 'error';
+  }
 
   // Computed properties
   const isLoading = computed(() => status.value === 'loading');
