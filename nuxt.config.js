@@ -46,4 +46,8 @@ export default {
       autoprefixer: {},
     },
   },
+  buildModules: [
+    // Add more modules here
+    '@nuxtjs/dotenv',
+  ],
 };

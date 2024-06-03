@@ -7,8 +7,8 @@
       <Error :error="error" />
     </template>
     <template v-if="isSuccess">
-      <ul>
-        <li v-for="item in data" :key="item.id">{{ item.name }}</li>
+      <ul class="bg-green-100 border border-green-400 px-4 py-3 rounded relative grid">
+        <li v-for="item in data" :key="item.id">{{ item.id }}</li>
       </ul>
     </template>
   </div>
