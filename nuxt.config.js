@@ -38,6 +38,7 @@ export default {
     '~/css/layout.css',
     '~/css/loading.css',
     '~/css/menu.css',
+    '~/css/tabs.css',
   ],
   postcss: {
     plugins: {

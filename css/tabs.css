@@ -1,0 +1,18 @@
+.tabs {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+}
+.tabs button {
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+.tabs button.active {
+  border-bottom: 2px solid;
+  margin-bottom: -2px;
+  @apply border-accent;
+}
+.tab-content {
+  padding: 1rem 0;
+}
