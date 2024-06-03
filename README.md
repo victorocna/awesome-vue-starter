@@ -1,6 +1,6 @@
 # Awesome Vue starter
 
-Starter template for Vue and Nuxt.js projects packed with features like authentication, custom hooks, Tailwind support and many more.
+Starter template for Vue and Nuxt projects packed with features like authentication, custom hooks, Tailwind support and many more.
 
 ## Documentation and wiki
 
