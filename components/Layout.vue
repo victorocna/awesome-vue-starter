@@ -6,6 +6,7 @@
         <div class="flex flex-1">
           <h3 class="text-2xl font-semibold">{{ title }}</h3>
         </div>
+        <MenuButton />
       </div>
       <div class="grid gap-4">
         <slot></slot>

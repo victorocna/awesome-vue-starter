@@ -21,6 +21,7 @@
     "no-warning-comments": "warn",
     "vue/multi-word-component-names": "off",
     "vue/no-reserved-component-names": "off",
+    "vue/no-multiple-template-root": "off",
     "vue/require-prop-types": "off"
   }
 }
