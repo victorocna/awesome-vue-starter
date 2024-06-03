@@ -22,20 +22,25 @@ export default {
       ...config.stylesheets.map((href) => ({ rel: 'stylesheet', href })),
     ],
   },
-  components: ['~/components', '~/components/Fields', '~/components/Forms'],
+  components: [
+    '~/components',
+    '~/components/Buttons',
+    '~/components/Fields',
+    '~/components/Forms',
+    '~/components/Tables',
+  ],
   css: [
     '~/css/index.css',
     '~/css/buttons.css',
     '~/css/forms.css',
     '~/css/layout.css',
     '~/css/loading.css',
+    '~/css/menu.css',
   ],
-  build: {
-    postcss: {
-      plugins: {
-        tailwindcss: {},
-        autoprefixer: {},
-      },
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
     },
   },
 };
