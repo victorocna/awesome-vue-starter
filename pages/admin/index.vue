@@ -6,9 +6,3 @@
     </div>
   </Layout>
 </template>
-
-<script>
-export default {
-  name: 'Page',
-};
-</script>
