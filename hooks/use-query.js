@@ -1,5 +1,6 @@
 import qs from 'query-string';
 import { ref, computed } from 'vue';
+import { cloneDeep } from 'lodash';
 import { axios } from '../lib';
 
 const useQuery = async (url, options) => {
@@ -24,7 +25,14 @@ const useQuery = async (url, options) => {
   const isSuccess = computed(() => status.value === 'success');
   const isError = computed(() => status.value === 'error');
 
-  return { data, error, status, isLoading, isSuccess, isError };
+  return {
+    data: cloneDeep(data.value),
+    error: cloneDeep(error.value),
+    status,
+    isLoading,
+    isSuccess,
+    isError,
+  };
 };
 
 export default useQuery;
